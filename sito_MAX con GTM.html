@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="it">
+<head>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-58XVC3G9');</script>
+<!-- End Google Tag Manager -->
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sito di Test MAX</title>
+  <meta name="description" content="Sito di Test MAX" />
+  <style>
+    :root {
+      --bg: #0b0f14;
+      --card: #111722;
+      --text: #e6edf3;
+      --muted: #a9b3bf;
+      --accent: #3b82f6;
+      --ring: rgba(59, 130, 246, 0.35);
+    }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      color: var(--text);
+      background: radial-gradient(1200px 800px at 20% -10%, #162033, transparent), var(--bg);
+      line-height: 1.6;
+    }
+    .container { max-width: 1100px; margin: 0 auto; padding: 24px; }
+    header {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 16px 0; position: sticky; top: 0; backdrop-filter: blur(8px);
+    }
+    .logo { font-weight: 800; letter-spacing: 0.3px; }
+    nav a { color: var(--muted); text-decoration: none; margin-left: 16px; }
+    nav a:hover { color: var(--text); }
+    .hero {
+      display: grid; grid-template-columns: 1.2fr 1fr; gap: 32px; align-items: center;
+      padding: 56px 0 40px;
+    }
+    .title { font-size: clamp(28px, 6vw, 48px); line-height: 1.1; margin: 0 0 12px; }
+    .subtitle { color: var(--muted); margin: 0 0 24px; }
+    .cta {
+      display: inline-flex; align-items: center; gap: 10px; padding: 12px 16px; border-radius: 12px;
+      background: linear-gradient(180deg, var(--accent), #1d4ed8);
+      color: white; text-decoration: none; font-weight: 700; box-shadow: 0 10px 30px -10px var(--ring);
+    }
+    .cta:hover { transform: translateY(-1px); }
+    .card {
+      background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0));
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 16px; padding: 18px; box-shadow: 0 4px 18px rgba(0,0,0,0.25);
+    }
+    .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .muted { color: var(--muted); }
+    footer { margin: 48px 0 16px; color: var(--muted); font-size: 14px; }
+    code, pre { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+    pre { background: #0f1624; padding: 12px; border-radius: 12px; overflow: auto; border: 1px solid rgba(255,255,255,0.06); }
+    @media (max-width: 860px) {
+      .hero { grid-template-columns: 1fr; }
+      .grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-58XVC3G9"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+  <div class="container">
+    <header>
+      <div class="logo">🚀 Sito di Test MAX</div>
+      <nav>
+        <a href="#features">Funzioni</a>
+        <a href="#how">Come si usa</a>
+        <a href="#contact">Contatti</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div>
+        <h1 class="title">TEST</h1>
+        <p class="subtitle">Sito <code>index.html</code>, MAX.</p>
+        <a class="cta" href="#how">MAX</a>
+      </div>
+      <div class="card">
+        <pre><code>&lt;!-- MAX --&gt;
+&lt;h2&gt;Ciao mondo!&lt;/h2&gt;
+&lt;p&gt;Sito di test.&lt;/p&gt;</code></pre>
+      </div>
+    </section>
+
+    <section id="features" style="margin-top: 24px">
+      <h2>Perché questo template</h2>
+      <div class="grid">
+        <div class="card"><h3>⚡️ Max</h3><p class="muted">Test</p></div>
+        <div class="card"><h3>🧩 Max</h3><p class="muted">Test</p></div>
+        <div class="card"><h3>📦 Max</h3><p class="muted">Test</p></div>
+      </div>
+    </section>
+
+    <section id="how" style="margin-top: 32px">
+      <h2>Test per AAT</h2>
+    </section>
+
+    <section id="contact" style="margin-top: 32px">
+      <h2>Contatti</h2>
+      <p class="muted"><a href="mailto:tuo@email.it">tuo@email.it</a> • <a href="#">@tuo-handle</a></p>
+    </section>
+
+    <footer>
+      © <span id="year"></span> MassimoBrigeno. Tutti i diritti riservati.
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
